@@ -22,7 +22,7 @@ jobfilename =  out_data_path + 'jobpostings_uploaded_' + str(dt.today().date()) 
 # instantiate object & login
 # svc = login_beatbox_sandbox()
 svc = login_beatbox()
-logging.basicConfig(filename='errors.log', level=logging.DEBUG)
+logging.basicConfig(filename='errors.log', level=logging.ERROR)
 
 # data governance & cio extractor
 url_api  = 'https://data.import.io/extractor/f0d09a08-6888-42da-91c6-77aac5e396d7/csv/latest?_apikey=281b13971692444ab021c3bb92ebf79173c7180cde94f96514635468b1048bb6d5089c037f054495212782b710a184d3812527d6fffaa277eceede32176f97f5a77314da48eb97089c7671ca9ed2479d'

@@ -19,7 +19,7 @@ from googleapiclient.discovery import build
 import json
 from add_titlescore import *
 
-
+logging.basicConfig(filename='errors.log', level=logging.ERROR)
 today = dt.today().date()
 
 def assign_SDR(state):
